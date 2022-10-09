@@ -98,7 +98,7 @@ const check = async (filter) => {
 };
 
 exports.store = async (req, res, next) => {
-  const { title, releaseDate, genres, duration, rating, description } =
+  const { title, releaseDate, geners, duration, rating, description } =
     req.body;
   const nameExist = await check({ title: title });
   if (nameExist) {
@@ -107,10 +107,15 @@ exports.store = async (req, res, next) => {
       `This '${req.body.title}' title already exists`
     );
   }
+
+  const genreIdx = geners.map((value) => {
+    return Object(value);
+  });
+
   const _movie = Movie.create({
     title,
     releaseDate,
-    genres: genres,
+    genres: genreIdx[0],
     duration,
     rating,
     description,
