@@ -23,5 +23,7 @@
   app.use("/api/v1/genre", GenreRoutes);
   app.use("/api/v1/movie", MovieRoutes);
 
-  app.listen(3000, () => console.log(`APP is running on ${process.env.PORT}`));
+  app.listen(process.env.PORT, () =>
+    console.log(`APP is running on ${process.env.PORT}`)
+  );
 }
