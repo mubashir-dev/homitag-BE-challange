@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "4cd22fc4-abea-4afe-9b95-4d8742950a0c",
+		"name": "Homitag BE Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9575943"
+	},
+	"item": [
+		{
+			"name": "Movie Genre",
+			"item": [
+				{
+					"name": "Index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Action",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Cartoon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/genre/",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"genre",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Action",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Cartoon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}/genre/63428dcccf756ace342db148",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"genre",
+								"63428dcccf756ace342db148"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Action",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Cartoon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/genre/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"genre",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Action Cartoons",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Cartoon 404",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}/genre/edit/63428dcccf756ace342db148",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"genre",
+								"edit",
+								"63428dcccf756ace342db148"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Action Cartoons",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Cartoon 404",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}/genre/delete/634291a32e491472890db219",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"genre",
+								"delete",
+								"634291a32e491472890db219"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "Index",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Action",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Cartoon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}/movie/",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"movie",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Action",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Cartoon",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}/movie/6342a7a845e8c09e036e7a97",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"movie",
+								"6342a7a845e8c09e036e7a97"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rating",
+									"value": "3.4",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "130",
+									"description": "in minutes",
+									"type": "text"
+								},
+								{
+									"key": "geners[0]",
+									"value": "6342c69468d1e01f13800ff6",
+									"type": "text"
+								},
+								{
+									"key": "geners[0]",
+									"value": "6342c755298aa13c2703b5cf",
+									"type": "text"
+								},
+								{
+									"key": "releaseDate",
+									"value": "11-20-2022",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "BBC Earth 404",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/movie/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"movie",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rating",
+									"value": "3.4",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "145",
+									"type": "text"
+								},
+								{
+									"key": "genres[0]",
+									"value": "6342a0ad765659ba9c569e95",
+									"type": "text"
+								},
+								{
+									"key": "geners[0]",
+									"value": "63428d50496cab6a1d22b17e",
+									"type": "text"
+								},
+								{
+									"key": "releaseDate",
+									"value": "11-20-2022",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "BBC 101",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}/movie/edit/6342a7a845e8c09e036e7a97",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"movie",
+								"edit",
+								"6342a7a845e8c09e036e7a97"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "description",
+									"value": "Action Cartoons",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Cartoon 404",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{dev}}/movie/delete/6342a7a845e8c09e036e7a97",
+							"host": [
+								"{{dev}}"
+							],
+							"path": [
+								"movie",
+								"delete",
+								"6342a7a845e8c09e036e7a97"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
