@@ -16,7 +16,7 @@
   );
 
   //Routing
-  app.get("/welecome", () => {
+  app.get("/welecome", (req, res, next) => {
     res.send(200, { message: "App is running successfully" });
   });
 
