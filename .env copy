@@ -1,0 +1,13 @@
+#SYSTEM
+APP_NAME="Homitag BE TEST"
+NODE_ENV='development'
+#DATABASE
+DB_CONNECTION="MONGODB"
+DB_HOST="127.0.0.1"
+DB_USERNAME=""
+DB_PASSWORD=""
+DB_PORT="27017"
+DB_NAME="homitag-test"
+DB_URL = "mongodb://localhost:27017/homitag-test"
+#SYSTEM
+PORT=3000
