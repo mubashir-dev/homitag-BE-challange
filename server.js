@@ -16,8 +16,8 @@
   );
 
   //Routing
-  app.get("/welecome", (req, res, next) => {
-    res.send(200, { message: "App is running successfully" });
+  app.get("/welcome", (req, res, next) => {
+    res.status(200).send({ message: "Server is Up & Running :dd" });
   });
 
   app.use("/api/v1/genre", GenreRoutes);
